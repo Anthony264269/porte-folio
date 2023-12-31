@@ -14,16 +14,16 @@
   <header>
     <nav class="navbar fixed-top navbar-expand-lg fs-3">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand text-light" href="#">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse text-light" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#mes-competences">Mes compétences</a>
-            <a class="nav-link" href="#mes-projets">Mes projets</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link active text-light" aria-current="page" href="#mes-competences">Mes compétences</a>
+            <a class="nav-link text-light" href="#mes-projets">Mes projets</a>
+            <a class="nav-link text-light" href="#contact">Contact</a>
 
           </div>
         </div>
@@ -45,7 +45,7 @@
         </div>
 
 
-        <div class="col-md-6 d-flex justify-content-end">
+        <div class="col-md-6 d-flex justify-content-end pt-5">
           <img id="ma-photo" src="./img/IMG_20231227_192235.jpg" height="400px" alt="ma photo">
         </div>
       </div>
@@ -77,38 +77,36 @@
       </div>
 
     </section>
-    <section class="mes-projets container">
+    <section id="mes-projets" class="container ">
       <div class="boxed text-center">
-        <h2>Mes projets</h2>
-        <div class="flex wrap space-between">
-          <div class="w32 realisation">
-            <a href="">
-              <img src="./images-projets/the mountain.png" alt="the mountain">
-            </a>
+        <h2 class="pb-5">Mes projets</h2>
+        <div class="d-flex justify-content-between pb-5">
+          <div id="wrapper" style="margin-top:200px;">
+
+
+
+            <div class="carrousel d-flex justify-content-center">
+              <img src="./images-projets/the mountain.png" alt="" class="plan p1">
+              <img src="./images-projets/onemillion.png" alt="" class="plan p2">
+              <img src="./images-projets/Capture d'écran 2023-12-29 194339.png" alt="" class="plan p3">
+              <img src="./images-projets/Capture d'écran 2023-12-29 194843.png" alt="" class="plan p4">
+              <img src="./images-projets/Capture d'écran 2023-12-31 140439.png" alt="" class="plan p5">
+
+              <div class="plan bg-transparent d-flex justify-content-center">Project</div>
+            </div>
+
           </div>
-          <div class="w32 realisation">
-            <a href="">
-              <img src="./images-projets/onemillion.png" alt="the mountain">
-            </a>
-          </div>
-          <div class="w32 realisation">
-            <a href="">
-              <img src="./images-projets/Capture d'écran 2023-12-29 194339.png" alt="mario">
-            </a>
-          </div>
-          <div class="w32 realisation">
-            <a href="">
-              <img src="./images-projets/Capture d'écran 2023-12-29 194843.png" alt="pharma">
-            </a>
-          </div>
+
         </div>
       </div>
 
     </section>
   </main>
   <footer>
-    <div id="contact" class="d-flex justify-content-center align-items-end fs-3 pb-5">
-      <p>Mail:tony264269@gmail.com</p>
+    <div id="contact" class="d-flex flex-column justify-content-center align-items-center fs-3 pt-5 pb-5 bg-danger">
+      <img src="./mail_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      <p>tony264269@gmail.com</p>
+      <a href="./mon-CV/CV de Anthony Canet (1).pdf">Mon CV</a>
     </div>
   </footer>
 
