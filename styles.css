@@ -12,11 +12,21 @@ body {
 
 }
 
+
+
 #ma-photo {
   border-radius: 30px;
+  
+  
 }
 
-
+img.superimage{
+  opacity: 0.1;
+  transition: opacity .4s;
+}
+img.superimage:hover{
+  opacity:0.9;
+}
 
 .gallery-1 {
   --s: 280px;
@@ -182,8 +192,6 @@ body {
   }
 }
 
-
-
 footer {
   color: rgb(8, 8, 8);
 }
@@ -203,7 +211,7 @@ footer {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-animation: Caroussel 10s infinite linear;
-  animation: Caroussel 10s infinite linear;
+  animation: Caroussel 18s infinite linear;
   -moz-transform-style: preserve-3d;
   -moz-animation: Caroussel 10s infinite linear;
 }
@@ -288,5 +296,6 @@ footer {
   -moz-transform: rotateY(288deg) translateZ(200px);
   transform: rotateY(288deg) translateZ(200px);}
 
+  
 
 
