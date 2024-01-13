@@ -1,32 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
-
 body {
   height: 100%;
   width: 100%;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 12%, rgba(0, 0, 11, 1) 31%);
-  object-fit: cover;
-  font-family: 'caveat', cursive;
-  color: rgb(243, 243, 250);
+  background-image: url(./img/_0300a7ab-d25d-44af-b203-89372f609353.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 
+nav {
+  color: black;
+  font-size: 2em;
+}
 
+@media only screen and (max-width: 850px) {
+  nav {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  nav {
+    font-size: 1em;
+  }
+}
+
+#presentation {
+  color: black;
+  padding-top: 1500px;
+}
+
+#bg-presentation {
+  background-color: darkgray;
+  opacity: 0.7;
+
+}
+
+#presentation p {
+  font-size: 1.8em;
+}
+
+@media only screen and (max-width: 1000px) {
+  #presentation p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #presentation p {
+    font-size: 0.6em;
+    margin-left: 5px;
+  }
+}
+#presentation h1 {
+
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 1000px) {
+  #presentation h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #presentation h1 {
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
 }
 
 
 
 #ma-photo {
   border-radius: 30px;
-  
-  
+  opacity: 0.2;
+  transition: opacity .4s;
+  height: 450px;
+  width: auto;
 }
 
-img.superimage{
-  opacity: 0.1;
-  transition: opacity .4s;
+@media only screen and (max-width: 1000px) {
+  #ma-photo {
+    height: 350px;
+    width: auto;
+
+  }
 }
-img.superimage:hover{
-  opacity:0.9;
+
+@media only screen and (max-width: 510px) {
+  #ma-photo {
+    height: 300px;
+    width: auto;
+    margin-left: 5px;
+  }
 }
+
+@media only screen and (max-width: 500px) {
+  #ma-photo {
+    height: 245px;
+    width: auto;
+  }
+}
+
+#ma-photo:hover {
+  opacity: 1;
+}
+
+#mes-projets {
+  height: 100%;
+  width: 100%;
+
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 850px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+footer {
+  color: rgb(8, 8, 8);
+  background-color: rgba(47, 44, 44, 0.61);
+  height: 100%;
+  width: 100%;
+}
+
+footer p {
+
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 850px) {
+  footer p {
+    font-size: 1em;
+  }
+}
+
+.mon-cv {
+  color: darkorange;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 850px) {
+  .mon-cv {
+    font-size: 1em;
+  }
+}
+
+.img-cv {
+  height: 50px;
+}
+
+@media only screen and (max-width: 850px) {
+  .mon-cv {
+    height: 25px;
+  }
+}
+
 
 .gallery-1 {
   --s: 280px;
@@ -192,9 +326,6 @@ img.superimage:hover{
   }
 }
 
-footer {
-  color: rgb(8, 8, 8);
-}
 
 #wrapper {
   width: 900px;
@@ -217,22 +348,28 @@ footer {
 }
 
 .plan {
+
   position: absolute;
   height: auto;
   width: 200px;
   text-align: center;
-  font-size: 8em;
-  color: #FFF;
+  font-size: 6em;
+  color: #0000006f;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.b{
-   opacity: 0.3;
-  transition: opacity .4s;
-}
-.b:hover{
-  opacity:0.9;
+
+.b {
+  opacity: 0.7;
+  transition: opacity .3s;
 }
 
+.b:hover {
+  opacity: 1;
+}
+
+.projects {
+  font-size: 3em;
+}
 
 @-webkit-keyframes Caroussel {
 
@@ -286,24 +423,25 @@ footer {
 
 .p1 {
   -moz-transform: translateZ(200px);
-  transform: translateZ(200px);}
+  transform: translateZ(200px);
+}
 
 .p2 {
   -moz-transform: rotateY(72deg) translateZ(200px);
-  transform: rotateY(72deg) translateZ(200px);}
+  transform: rotateY(72deg) translateZ(200px);
+}
 
 .p3 {
   -moz-transform: rotateY(144deg) translateZ(200px);
-  transform: rotateY(144deg) translateZ(200px);}
+  transform: rotateY(144deg) translateZ(200px);
+}
 
 .p4 {
   -moz-transform: rotateY(216deg) translateZ(200px);
-  transform: rotateY(216deg) translateZ(200px);}
+  transform: rotateY(216deg) translateZ(200px);
+}
 
 .p5 {
   -moz-transform: rotateY(288deg) translateZ(200px);
-  transform: rotateY(288deg) translateZ(200px);}
-
-  
-
-
+  transform: rotateY(288deg) translateZ(200px);
+}

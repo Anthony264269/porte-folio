@@ -12,47 +12,36 @@
 
 <body>
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg fs-3">
+    <nav class="navbar fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-light" id="navbarNavAltMarkup">
-          <div class="navbar-nav ">
-            <a class="nav-link order-5 active text-light" aria-current="page" href="#mes-competences">Mes compétences</a>
-            <a class="nav-link order-5 text-light" href="#mes-projets">Mes projets</a>
-            <a class="nav-link order-5 text-light" href="#contact">Contact</a>
-
-          </div>
-        </div>
+        <a class="nav-link" href="#">Accueil</a>
+        <a class="nav-link" href="#mes-competences">Mes compétences</a>
+        <a class="nav-link" href="#mes-projets">Mes projets</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
     </nav>
   </header>
   <main>
 
-    <section id="presentation" class="container pt-5">
-      <div class="d-flex">
-        <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
-          <h1 class="pt-5 pb-5 justify-content-center">Salut, je suis Anthony, développeur web junior.</h1>
-          <p class="pt-5 fs-4 justify-content-center ">Passioné par le développement web, j'ai
+    <section id="presentation" class="container pt-5 vh-100">
+      <div class="d-flex justify-content-center align-items-center">
+        <div id="bg-presentation" class="col-md-6 d-flex flex-column mt-5 justify-content-center">
+          <h1 class="pt-5 pb-5">Salut, je suis Anthony, développeur web junior.</h1>
+          <p class="pt-5">Passioné par le développement web, j'ai
             decidé de me lancer en
             rejoignant la formation
             développeur web et
             mobile de Garage 404.</p>
-
         </div>
-
-
         <div class="col-md-6 d-flex justify-content-end pt-5">
-          <img id="ma-photo" class="superimage" src="./img/Capture d'écran 2024-01-02 201123.png" height="350px" alt="ma photo">
+          <img id="ma-photo" src="./img/Capture d'écran 2024-01-02 201123.png" alt="ma photo">
         </div>
       </div>
     </section>
-    <section id="mes-competences" class="container col-md">
+
+    <section id="mes-competences" class="container pt-5 col-md vh-100">
       <div class="container">
-        <h2 class="featurette-heading animated-title d-flex justify-content-center pt-5"> Mes compétences </h2>
+        <h2 class="d-flex justify-content-center pt-5">Mes compétences</h2>
       </div>
       <div class="d-flex justify-content-center align-items-center pt-5">
         <div class="gallery-1">
@@ -77,35 +66,37 @@
       </div>
 
     </section>
-    <section id="mes-projets" class="container col-md">
+    <section id="mes-projets" class="container col-md vh-100">
       <div class="boxed text-center">
-        <div class="d-flex justify-content-between pb-5">
+        <div class="d-flex justify-content-center align-items-center pb-5">
           <div id="wrapper" style="margin-top:200px;">
 
-
+            <h2 class="d-flex justify-content-center pt-5 pb-5">Mes projets</h2>
 
             <div class="carrousel d-flex justify-content-center">
               <img id="mountain" src="./images-projets/the mountain.png" alt="the mountain" class="plan p1 b">
               <img id="one-million" src="./images-projets/onemillion.png" alt="one million" class="plan p2 b">
-              <img id="mario" src="./images-projets/Capture d'écran 2023-12-29 194339.png" alt="mario" class="plan p3 b">
-              <img id="pharma" src="./images-projets/Capture d'écran 2023-12-29 194843.png" alt="pharma" class="plan p4 b">
-              <img id="quizz" src="./images-projets/Capture d'écran 2023-12-31 140439.png" alt="quizz" class="plan p5 b">
+              <img id="mario" src="./images-projets/Capture d'écran 2023-12-29 194339.png" alt="mario"
+                class="plan p3 b">
+              <img id="pharma" src="./images-projets/Capture d'écran 2023-12-29 194843.png" alt="pharma"
+                class="plan p4 b">
+              <img id="quizz" src="./images-projets/Capture d'écran 2023-12-31 140439.png" alt="quizz"
+                class="plan p5 b">
 
-              <div class="plan bg-transparent d-flex justify-content-center">Project</div>
+
+
             </div>
 
           </div>
-
         </div>
-      </div>
 
     </section>
   </main>
   <footer>
-    <div id="contact" class="d-flex flex-column justify-content-center align-items-center fs-3 pt-5 pb-5 bg-danger">
-      <img src="./mail_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+    <div id="contact" class="d-flex flex-column justify-content-center align-items-center pt-3 pb-3">
+      <img class="img-cv" src="./mail_FILL0_wght400_GRAD0_opsz24.svg" alt="">
       <p>tony264269@gmail.com</p>
-      <a href="./mon-CV/CV de Anthony Canet (1).pdf">Mon CV</a>
+      <a class="mon-cv" href="./mon-CV/CV de Anthony Canet (1).pdf">Mon CV</a>
     </div>
   </footer>
 
