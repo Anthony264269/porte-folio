@@ -29,8 +29,17 @@ nav {
   padding-top: 1500px;
 }
 
+#presentation h1 {
+  margin-left: 5px;
+}
+
+#presentation p {
+  margin-left: 5px;
+}
+
 #bg-presentation {
   background-color: darkgray;
+  border-radius: 30px;
   opacity: 0.7;
 
 }
@@ -66,6 +75,15 @@ nav {
   #presentation h1 {
     font-size: 0.8em;
     margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #presentation {
+    height: auto;
+    width: 400px;
+
+    
   }
 }
 
