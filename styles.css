@@ -1,10 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
   background-image: url(./img/_0300a7ab-d25d-44af-b203-89372f609353.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  position: relative;
 }
 
 nav {
@@ -41,17 +48,11 @@ nav {
   background-color: darkgray;
   border-radius: 30px;
   opacity: 0.7;
-
+  width: 90%;
 }
 
 #presentation p {
   font-size: 1.8em;
-}
-
-@media only screen and (max-width: 1000px) {
-  #presentation p {
-    font-size: 1em;
-  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -60,22 +61,10 @@ nav {
     margin-left: 5px;
   }
 }
+
 #presentation h1 {
 
   font-size: 2em;
-}
-
-@media only screen and (max-width: 1000px) {
-  #presentation h1 {
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #presentation h1 {
-    font-size: 0.8em;
-    margin-left: 5px;
-  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -83,7 +72,7 @@ nav {
     height: auto;
     width: 400px;
 
-    
+
   }
 }
 
@@ -91,34 +80,10 @@ nav {
 
 #ma-photo {
   border-radius: 30px;
-  opacity: 0.2;
+  opacity: 0.5;
   transition: opacity .4s;
-  height: 450px;
-  width: auto;
 }
 
-@media only screen and (max-width: 1000px) {
-  #ma-photo {
-    height: 350px;
-    width: auto;
-
-  }
-}
-
-@media only screen and (max-width: 510px) {
-  #ma-photo {
-    height: 300px;
-    width: auto;
-    margin-left: 5px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #ma-photo {
-    height: 245px;
-    width: auto;
-  }
-}
 
 #ma-photo:hover {
   opacity: 1;
@@ -134,11 +99,6 @@ h2 {
   font-size: 2.5em;
 }
 
-@media only screen and (max-width: 850px) {
-  h2 {
-    font-size: 1.5em;
-  }
-}
 
 footer {
   color: rgb(8, 8, 8);
@@ -152,25 +112,15 @@ footer p {
   font-size: 1.5em;
 }
 
-@media only screen and (max-width: 850px) {
-  footer p {
-    font-size: 1em;
-  }
-}
-
-.mon-cv {
-  color: darkorange;
-  font-size: 1.5em;
-}
-
-@media only screen and (max-width: 850px) {
-  .mon-cv {
-    font-size: 1em;
-  }
-}
-
 .img-cv {
   height: 50px;
+}
+
+.fleche {
+  height: 50px;
+  position: fixed;
+  right: 2%;
+  bottom: 15%;
 }
 
 @media only screen and (max-width: 850px) {
@@ -354,8 +304,8 @@ footer p {
 }
 
 .carrousel {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -369,7 +319,7 @@ footer p {
 
   position: absolute;
   height: auto;
-  width: 200px;
+  width: 290px;
   text-align: center;
   font-size: 6em;
   color: #0000006f;
@@ -383,10 +333,6 @@ footer p {
 
 .b:hover {
   opacity: 1;
-}
-
-.projects {
-  font-size: 3em;
 }
 
 @-webkit-keyframes Caroussel {
@@ -462,4 +408,49 @@ footer p {
 .p5 {
   -moz-transform: rotateY(288deg) translateZ(200px);
   transform: rotateY(288deg) translateZ(200px);
+}
+
+
+@media only screen and (max-width: 850px) {
+  footer p {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .mon-cv {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #presentation h2 {
+    font-size: 25px;
+  }
+
+  #presentation p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #presentation h2 {
+    font-size: 20px;
+  }
+
+  #presentation p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #presentation h2 {
+    font-size: 18px;
+  }
+
+  #presentation p {
+    font-size: 18px;
+  }
 }

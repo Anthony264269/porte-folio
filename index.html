@@ -12,38 +12,42 @@
 
 <body>
   <header>
+    <div id="barre">
     <nav class="navbar fixed-top">
       <div class="container-fluid d-flex justify-content-around">
-        <a class="nav-link" href="#">Accueil</a>
         <a class="nav-link" href="#mes-competences">Mes compétences</a>
         <a class="nav-link" href="#mes-projets">Mes projets</a>
         <a class="nav-link" href="#contact">Contact</a>
       </div>
     </nav>
+  </div>
   </header>
   <main>
 
-    <section id="presentation" class="container pt-5 vh-100">
-      <div class="d-flex justify-content-center align-items-center">
-        <div id="bg-presentation" class="col-md-6 d-flex flex-column mt-5 justify-content-center">
-          <h1 class="pt-5 pb-5">Salut, je suis Anthony, développeur web junior.</h1>
-          <p class="pt-5">Passioné par le développement web, j'ai
-            decidé de me lancer en
-            rejoignant la formation
-            développeur web et
-            mobile de Garage 404.</p>
+    <section id="presentation" class="container-lg p-0 vh-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-sm-6 d-flex justify-content-lg-start justify-content-center h-50">
+          <article id="bg-presentation" class="p-4">
+            <h1 class="mb-4">Salut, je suis Anthony, développeur web junior.</h1>
+            <p class="">Passioné par le développement web, j'ai
+              decidé de me lancer en
+              rejoignant la formation
+              développeur web et
+              mobile de Garage 404.</p>
+            </article>  
         </div>
-        <div class="col-md-6 d-flex justify-content-end pt-5">
-          <img id="ma-photo" src="./img/Capture d'écran 2024-01-02 201123.png" alt="ma photo">
-        </div>
+        <article class="col-sm-6 d-flex justify-content-lg-end justify-content-center h-50">
+          <img id="ma-photo" src="./img/Capture d'écran 2024-01-02 201123.png" alt="ma photo" height="100%" width="auto">
+        </article>
       </div>
     </section>
 
     <section id="mes-competences" class="container pt-5 col-md vh-100">
-      <div class="container">
+      <div class="h-100">
+      <div class="container h-25">
         <h2 class="d-flex justify-content-center pt-5">Mes compétences</h2>
       </div>
-      <div class="d-flex justify-content-center align-items-center pt-5">
+      <div class="d-flex justify-content-center align-items-center pt-5 gap-5 h-25">
         <div class="gallery-1">
           <img src="./img/w3_html5-icon.svg" alt="html">
           <img src="./img/w3_css-icon.svg" alt="css">
@@ -57,7 +61,7 @@
           <img src="./img/reactjs-icon.svg" alt="react">
           <img src="./img/symfony-svgrepo-com.svg" alt="symfony">
         </div>
-
+</div>
 
 
 
@@ -76,12 +80,9 @@
             <div class="carrousel d-flex justify-content-center">
               <img id="mountain" src="./images-projets/the mountain.png" alt="the mountain" class="plan p1 b">
               <img id="one-million" src="./images-projets/onemillion.png" alt="one million" class="plan p2 b">
-              <img id="mario" src="./images-projets/Capture d'écran 2023-12-29 194339.png" alt="mario"
-                class="plan p3 b">
-              <img id="pharma" src="./images-projets/Capture d'écran 2023-12-29 194843.png" alt="pharma"
-                class="plan p4 b">
-              <img id="quizz" src="./images-projets/Capture d'écran 2023-12-31 140439.png" alt="quizz"
-                class="plan p5 b">
+              <img id="mario" src="./images-projets/Capture d'écran 2023-12-29 194339.png" alt="mario" class="plan p3 b">
+              <img id="pharma" src="./images-projets/Capture d'écran 2023-12-29 194843.png" alt="pharma" class="plan p4 b">
+              <img id="quizz" src="./images-projets/Capture d'écran 2023-12-31 140439.png" alt="quizz" class="plan p5 b">
 
 
 
@@ -89,15 +90,22 @@
 
           </div>
         </div>
-
-    </section>
-  </main>
+</section>
+<a href="#barre" class="btn">
+  <img class="fleche" src="./img/512px-Font_Awesome_5_solid_arrow-up.svg.png" alt="" class="icone">
+</a>
+</main>
   <footer>
-    <div id="contact" class="d-flex flex-column justify-content-center align-items-center">
+    <div id="contact" class="d-flex justify-content-center align-items-center pt-3 pb-3">
       <img class="img-cv" src="./mail_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-      <p>tony264269@gmail.com</p>
-      <a class="mon-cv" href="./mon-CV/CV-Canet-Anthony (1).pdf">Mon CV</a>
+      <a href="./mon-CV/CV-Canet-Anthony (1).pdf">
+      <img class="img-cv" src="./images-projets/cv-file-interface-symbol-svgrepo-com (1).svg"  alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/anthony-canet-17580b2b2/">
+        <img class="img-cv" src="./img/linkedin.svg" alt="">
+      </a>
     </div>
+   
   </footer>
 
 
