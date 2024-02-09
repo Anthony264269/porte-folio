@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="barre">
 
 <head>
   <meta charset="UTF-8">
@@ -7,12 +7,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css">
-  <title>Document</title>
+  <title>Anthony Canet Portfolio</title>
 </head>
 
 <body>
   <header>
-    <div id="barre">
+    <div >
     <nav class="navbar fixed-top">
       <div class="container-fluid d-flex justify-content-around">
         <a class="nav-link" href="#mes-competences">Mes compétences</a>
@@ -24,9 +24,9 @@
   </header>
   <main>
 
-    <section id="presentation" class="container-lg p-0 vh-100">
-      <div class="row justify-content-center align-items-center h-100">
-        <div class="col-sm-6 d-flex justify-content-lg-start justify-content-center h-50">
+    <section id="presentation" class="container-lg p-0">
+      <div id="presentation-div" class="row justify-content-center align-items-center">
+        <div class="col-sm-6 d-flex justify-content-lg-start justify-content-center">
           <article id="bg-presentation" class="p-4">
             <h1 class="mb-4">Salut, je suis Anthony, développeur web junior.</h1>
             <p class="">Passioné par le développement web, j'ai
@@ -36,7 +36,7 @@
               mobile de Garage 404.</p>
             </article>  
         </div>
-        <article class="col-sm-6 d-flex justify-content-lg-end justify-content-center h-50">
+        <article class="col-sm-6 d-flex justify-content-lg-end justify-content-center">
           <img id="ma-photo" src="./img/Capture d'écran 2024-01-02 201123.png" alt="ma photo" height="100%" width="auto">
         </article>
       </div>
@@ -57,7 +57,7 @@
 
         <div class="gallery-2">
           <img src="./img/php-icon.svg" alt="php">
-          <img src="./img/GitHub-Logo.wine.svg" alt="Github">
+          <img src="./img/github-svgrepo-com.svg" alt="Github">
           <img src="./img/reactjs-icon.svg" alt="react">
           <img src="./img/symfony-svgrepo-com.svg" alt="symfony">
         </div>
@@ -66,22 +66,34 @@
 
     </section>
     <section id="mes-projets" class="container col-md vh-100">
-      <div class="boxed text-center">
-        <div class="d-flex justify-content-center align-items-center pb-5">
-          <div id="wrapper" style="margin-top:200px;">
+      <div class="boxed text-center h-100">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div id="wrapper">
 
-            <h2 class="d-flex justify-content-center pt-5 pb-5">Mes projets</h2>
+            <h2 class="d-flex justify-content-center mb-5">Mes projets</h2>
 
             <div class="carrousel d-flex justify-content-center">
-              <img id="mountain" src="./images-projets/the mountain.png" alt="the mountain" class="plan p1 b">
-              <img id="one-million" src="./images-projets/onemillion.png" alt="one million" class="plan p2 b">
-              <img id="mario" src="./images-projets/Capture d'écran 2023-12-29 194339.png" alt="mario" class="plan p3 b">
-              <img id="pharma" src="./images-projets/Capture d'écran 2023-12-29 194843.png" alt="pharma" class="plan p4 b">
-              <img id="quizz" src="./images-projets/Capture d'écran 2023-12-31 140439.png" alt="quizz" class="plan p5 b">
-
-
-
+              <a href="#" class="plan p1 b" target="_blank">
+                <img id="mountain" src="./images-projets/the mountain.png" alt="the mountain" width="100%" height="auto" >
+              </a>
+              <a href="#" class="plan p2 b" target="_blank">
+                <img id="one-million" src="./images-projets/onemillion.png" alt="one million" width="100%" height="auto">
+              </a>
+              <a href="#" class="plan p3 b" target="_blank">
+                <img id="mario" src="./images-projets/Capture d'écran 2023-12-29 194339.png" alt="mario" width="100%" height="auto">
+              </a>
+              <a href="#" class="plan p4 b" target="_blank">
+                <img id="pharma" src="./images-projets/Capture d'écran 2023-12-29 194843.png" alt="pharma" width="100%" height="auto" >
+              </a>
+              <a href="#" class="plan p5 b" target="_blank">
+                <img id="quizz" src="./images-projets/Capture d'écran 2023-12-31 140439.png" alt="quizz" width="100%" height="auto" >
+              </a>
+              <a href="#" class="plan p6 b" target="_blank">
+                <img id="quizz" src="./images-projets/Capture d'écran 2023-12-31 140439.png" alt="quizz" width="100%" height="auto" >
+              </a>
+              
             </div>
+            
 
           </div>
         </div>
@@ -91,13 +103,15 @@
 </a>
 </main>
   <footer>
-    <div id="contact" class="d-flex justify-content-center align-items-center pt-3 pb-3">
-      <img class="img-cv" src="./mail_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-      <a href="./mon-CV/CV-Canet-Anthony (1).pdf">
-      <img class="img-cv" src="./images-projets/cv-file-interface-symbol-svgrepo-com (1).svg"  alt="">
+    <div id="contact" class="d-flex gap-4 justify-content-center align-items-center pt-2 pb-2">
+      <a href="" id="copierEmail">
+      <img class="img-mail" src="./img/Circle-icons-mail.svg.png" alt="">
       </a>
-      <a href="https://www.linkedin.com/in/anthony-canet-17580b2b2/">
-        <img class="img-cv" src="./img/linkedin.svg" alt="">
+      <a href="./mon-CV/CV-Canet-Anthony (1).pdf" target="_blank">
+      <img class="img-cv" src="./img/CDV-logo-rond-noir-CV.png"  alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/anthony-canet-17580b2b2/" target="_blank">
+        <img class="img-link" src="./img/linkedin.svg" alt="">
       </a>
     </div>
    

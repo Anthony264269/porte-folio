@@ -20,21 +20,19 @@ nav {
   font-size: 2em;
 }
 
-@media only screen and (max-width: 850px) {
-  nav {
-    font-size: 1.2em;
-  }
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
-@media only screen and (max-width: 520px) {
-  nav {
-    font-size: 1em;
-  }
-}
 
 #presentation {
   color: black;
-  padding-top: 1500px;
+  height: 100vh;
+}
+
+#presentation-div{
+  height: 100%;
 }
 
 #presentation h1 {
@@ -56,26 +54,7 @@ nav {
   font-size: 1.8em;
 }
 
-@media only screen and (max-width: 500px) {
-  #presentation p {
-    font-size: 0.6em;
-    margin-left: 5px;
-  }
-}
 
-#presentation h1 {
-
-  font-size: 2em;
-}
-
-@media only screen and (max-width: 500px) {
-  #presentation {
-    height: auto;
-    width: 400px;
-
-
-  }
-}
 
 
 
@@ -104,8 +83,7 @@ h2 {
 footer {
   color: rgb(8, 8, 8);
   background-color: rgba(47, 44, 44, 0.61);
-  height: 100%;
-  width: 100%;
+
 }
 
 footer p {
@@ -115,6 +93,18 @@ footer p {
 
 .img-cv {
   height: 50px;
+
+}
+
+.img-link {
+  height: 50px;
+
+}
+
+.img-mail {
+  height: 50px;
+
+
 }
 
 .fleche {
@@ -122,12 +112,6 @@ footer p {
   position: fixed;
   right: 2%;
   bottom: 10%;
-}
-
-@media only screen and (max-width: 850px) {
-  .mon-cv {
-    height: 25px;
-  }
 }
 
 
@@ -297,11 +281,10 @@ footer p {
 
 
 #wrapper {
-  width: 900px;
+  transform: translateY(-50%);
   -webkit-perspective: 800;
   perspective: 800;
   -moz-perspective: 800;
-  margin: 150px auto 0 auto;
 }
 
 .carrousel {
@@ -320,7 +303,10 @@ footer p {
 
   position: absolute;
   height: auto;
-  width: 290px;
+
+  /* taille image caroussel */
+  width: 400px;
+
   text-align: center;
   font-size: 6em;
   color: #0000006f;
@@ -353,62 +339,42 @@ footer p {
     transform: rotateY(0);
   }
 
+
+  /* gère la vitesse de rotation du caroussel */
   to {
     transform: rotateY(-360deg);
   }
 }
 
 
-
 .p1 {
-  -webkit-transform: translateZ(200px);
-  transform: translateZ(200px);
+  -moz-transform: translateZ(346px);
+  transform: translateZ(346px);
 }
 
 .p2 {
-  -webkit-transform: rotateY(72deg) translateZ(200px);
-  transform: rotateY(72deg) translateZ(200px);
+  -moz-transform: rotateY(60deg) translateZ(346px);
+  transform: rotateY(60deg) translateZ(346px);
 }
 
 .p3 {
-  -webkit-transform: rotateY(144deg) translateZ(200px);
-  transform: rotateY(144deg) translateZ(200px);
+  -moz-transform: rotateY(120deg) translateZ(346px);
+  transform: rotateY(120deg) translateZ(346px);
 }
 
 .p4 {
-  -webkit-transform: rotateY(216deg) translateZ(200px);
-  transform: rotateY(216deg) translateZ(200px);
+  -moz-transform: rotateY(180deg) translateZ(346px);
+  transform: rotateY(180deg) translateZ(346px);
 }
 
 .p5 {
-  -webkit-transform: rotateY(288deg) translateZ(200px);
-  transform: rotateY(288deg) translateZ(200px);
+  -moz-transform: rotateY(240deg) translateZ(346px);
+  transform: rotateY(240deg) translateZ(346px);
 }
 
-
-.p1 {
-  -moz-transform: translateZ(200px);
-  transform: translateZ(200px);
-}
-
-.p2 {
-  -moz-transform: rotateY(72deg) translateZ(200px);
-  transform: rotateY(72deg) translateZ(200px);
-}
-
-.p3 {
-  -moz-transform: rotateY(144deg) translateZ(200px);
-  transform: rotateY(144deg) translateZ(200px);
-}
-
-.p4 {
-  -moz-transform: rotateY(216deg) translateZ(200px);
-  transform: rotateY(216deg) translateZ(200px);
-}
-
-.p5 {
-  -moz-transform: rotateY(288deg) translateZ(200px);
-  transform: rotateY(288deg) translateZ(200px);
+.p6 {
+  -moz-transform: rotateY(300deg) translateZ(346px);
+  transform: rotateY(300deg) translateZ(346px);
 }
 
 .main {
@@ -581,15 +547,336 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 575px) {
   #presentation {
     margin-top: 50px;
-  }
-  #presentation h1{
-   font-size: 16px;
+    width: 100%;
+    height: calc(100vh - 50px);
   }
 
-  #presentation p{
-    font-size: 16px;
-   }
+  #presentation h1 {
+    font-size: 22px;
+  }
+
+  #presentation p {
+    font-size: 19px;
+  }
+
+  #presentation > div > article{
+    height: 350px;
+  }
+
+  #bg-presentation{
+    height: 300px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 350px) {
+  #presentation h1 {
+    font-size: 20px;
+  }
+
+  #presentation p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width:575px){
+  /* #presentation-div {
+    height: 100% !important;
+  } */
+}
+
+@media only screen and (max-width: 500px) {
+  
+
+  #presentation {
+    /* height: auto; */
+    width: 100%;
+
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  nav {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  nav {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .mon-cv {
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .gallery-1 {
+    --s: 180px;
+    /* control the size */
+
+    display: grid;
+    width: var(--s);
+    aspect-ratio: 1;
+    overflow: hidden;
+    padding: calc(var(--s) / 20);
+    border-radius: 50%;
+    position: relative;
+    clip-path: circle(49.5%);
+    /* to avoid a few glitch cause by overflow: hidden */
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .gallery-2 {
+    --s: 180px;
+    /* control the size */
+
+    display: grid;
+    width: var(--s);
+    aspect-ratio: 1;
+    overflow: hidden;
+    padding: calc(var(--s) / 20);
+    border-radius: 50%;
+    position: relative;
+    clip-path: circle(49.5%);
+    /* to avoid a few glitch cause by overflow: hidden */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  #wrapper {
+    transform: translateY(-50%);
+    -webkit-perspective: 800;
+    perspective: 800;
+    -moz-perspective: 800;
+  }
+  
+  .carrousel {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation: Caroussel 10s infinite linear;
+    animation: Caroussel 18s infinite linear;
+    -moz-transform-style: preserve-3d;
+    -moz-animation: Caroussel 10s infinite linear;
+  }
+  
+  .plan {
+  
+    position: absolute;
+    height: auto;
+  
+    /* taille image caroussel */
+    width:250px;
+  
+    text-align: center;
+    font-size: 6em;
+    color: #0000006f;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .b {
+    opacity: 0.7;
+    transition: opacity .3s;
+  }
+  
+  .b:hover {
+    opacity: 1;
+  }
+  
+  @-webkit-keyframes Caroussel {
+  
+    from {
+      -webkit-transform: rotateY(0);
+    }
+  
+    to {
+      -webkit-transform: rotateY(-360deg);
+    }
+  }
+  
+  @keyframes Caroussel {
+  
+    from {
+      transform: rotateY(0);
+    }
+  
+  
+    /* gère la vitesse de rotation du caroussel */
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
+  
+  .p1 {
+    -moz-transform: translateZ(20px);
+    transform: translateZ(20px);
+  }
+  
+  .p2 {
+    -moz-transform: rotateY(60deg) translateZ(20px);
+    transform: rotateY(60deg) translateZ(20px);
+  }
+  
+  .p3 {
+    -moz-transform: rotateY(120deg) translateZ(20px);
+    transform: rotateY(120deg) translateZ(20px);
+  }
+  
+  .p4 {
+    -moz-transform: rotateY(180deg) translateZ(20px);
+    transform: rotateY(180deg) translateZ(20px);
+  }
+  
+  .p5 {
+    -moz-transform: rotateY(240deg) translateZ(20px);
+    transform: rotateY(240deg) translateZ(20px);
+  }
+  
+  .p6 {
+    -moz-transform: rotateY(300deg) translateZ(20px);
+    transform: rotateY(300deg) translateZ(20px);
+  }
+  
+  .main {
+    display: 50;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }
+
 }
