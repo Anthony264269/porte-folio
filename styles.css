@@ -7,7 +7,8 @@
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background-image: url(./img/_0300a7ab-d25d-44af-b203-89372f609353.jpg);
+  /* background-image: url(./img/_0300a7ab-d25d-44af-b203-89372f609353.jpg); */
+  background-color: rgb(162, 165, 165);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -32,6 +33,7 @@ nav {
 #presentation {
   color: black;
   height: 100vh;
+  background-image: url(./background/abstract-fon-serii-abstraktsiya-svetlii-138578.jpeg);
 }
 
 #presentation-div{
@@ -48,7 +50,7 @@ nav {
 }
 
 #bg-presentation {
-  background-color:#DCDCDC;
+  
   border-radius: 30px;
   opacity: 0.95;
   width: 90%;
@@ -64,19 +66,24 @@ nav {
 
 #ma-photo {
   border-radius: 30px;
-  opacity: 0.5;
-  transition: opacity .4s;
+  /* opacity: 0.5;
+  transition: opacity .4s; */
 }
 
-
+/* 
 #ma-photo:hover {
   opacity: 1;
-}
+} */
 
 #mes-projets {
   height: 100%;
   width: 100%;
+  background-image: url(./background/textures-poverkhnost-serii-temnii-svetlii-ten-156458.jpeg);
 
+}
+
+#mes-competences{
+  background-image: url(./background/textures-tochki-serii-tekstura-66846.jpeg);
 }
 
 h2 {
