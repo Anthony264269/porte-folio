@@ -18,6 +18,9 @@ body {
 nav {
   color: black;
   font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  
 }
 
 .row{
@@ -37,16 +40,17 @@ nav {
 
 #presentation h1 {
   margin-left: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #presentation p {
-  margin-left: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #bg-presentation {
-  background-color: darkgray;
+  background-color:#DCDCDC;
   border-radius: 30px;
-  opacity: 0.7;
+  opacity: 0.95;
   width: 90%;
 }
 
@@ -77,6 +81,8 @@ nav {
 
 h2 {
   font-size: 2.5em;
+  font-family: 'Protest Strike', sans-serif;
+  font-weight: bold;
 }
 
 
@@ -294,7 +300,7 @@ footer p {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-animation: Caroussel 10s infinite linear;
-  animation: Caroussel 18s infinite linear;
+  animation: Caroussel 14s infinite linear;
   -moz-transform-style: preserve-3d;
   -moz-animation: Caroussel 10s infinite linear;
 }
@@ -309,8 +315,7 @@ footer p {
 
   text-align: center;
   font-size: 6em;
-  color: #0000006f;
-  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .b {
@@ -377,130 +382,7 @@ footer p {
   transform: rotateY(300deg) translateZ(346px);
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
 
-.up {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
-}
-
-.down {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
-}
-
-.card1 {
-  width: 90px;
-  height: 90px;
-  outline: none;
-  border: none;
-  background: white;
-  border-radius: 90px 5px 5px 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
-}
-
-.instagram {
-  margin-top: 1.5em;
-  margin-left: 1.2em;
-  fill: #cc39a4;
-}
-
-.card2 {
-  width: 90px;
-  height: 90px;
-  outline: none;
-  border: none;
-  background: white;
-  border-radius: 5px 90px 5px 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
-}
-
-.twitter {
-  margin-top: 1.5em;
-  margin-left: -.9em;
-  fill: #03A9F4;
-}
-
-.card3 {
-  width: 90px;
-  height: 90px;
-  outline: none;
-  border: none;
-  background: white;
-  border-radius: 5px 5px 5px 90px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
-}
-
-.github {
-  margin-top: -.6em;
-  margin-left: 1.2em;
-}
-
-.card4 {
-  width: 90px;
-  height: 90px;
-  outline: none;
-  border: none;
-  background: white;
-  border-radius: 5px 5px 90px 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
-}
-
-.discord {
-  margin-top: -.9em;
-  margin-left: -1.2em;
-  fill: #8c9eff;
-}
-
-.card1:hover {
-  cursor: pointer;
-  scale: 1.1;
-  background-color: #cc39a4;
-}
-
-.card1:hover .instagram {
-  fill: white;
-}
-
-.card2:hover {
-  cursor: pointer;
-  scale: 1.1;
-  background-color: #03A9F4;
-}
-
-.card2:hover .twitter {
-  fill: white;
-}
-
-.card3:hover {
-  cursor: pointer;
-  scale: 1.1;
-  background-color: black;
-}
-
-.card3:hover .github {
-  fill: white;
-}
-
-.card4:hover {
-  cursor: pointer;
-  scale: 1.1;
-  background-color: #8c9eff;
-}
-
-.card4:hover .discord {
-  fill: white;
-}
 
 
 @media only screen and (max-width: 850px) {
@@ -529,7 +411,7 @@ footer p {
 
 @media only screen and (max-width: 850px) {
   #presentation h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   #presentation p {
@@ -539,11 +421,11 @@ footer p {
 
 @media only screen and (max-width: 750px) {
   #presentation h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   #presentation p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -671,7 +553,7 @@ footer p {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-animation: Caroussel 10s infinite linear;
-    animation: Caroussel 18s infinite linear;
+    animation: Caroussel 12s infinite linear;
     -moz-transform-style: preserve-3d;
     -moz-animation: Caroussel 10s infinite linear;
   }
@@ -682,12 +564,11 @@ footer p {
     height: auto;
   
     /* taille image caroussel */
-    width:250px;
+    width:200px;
   
     text-align: center;
     font-size: 6em;
-    color: #0000006f;
-    background-color: rgba(0, 0, 0, 0.7);
+
   }
   
   .b {
@@ -725,158 +606,34 @@ footer p {
   
   
   .p1 {
-    -moz-transform: translateZ(20px);
-    transform: translateZ(20px);
+    -moz-transform: translateZ(173px);
+    transform: translateZ(173px);
   }
   
   .p2 {
-    -moz-transform: rotateY(60deg) translateZ(20px);
-    transform: rotateY(60deg) translateZ(20px);
+    -moz-transform: rotateY(60deg) translateZ(173px);
+    transform: rotateY(60deg) translateZ(173px);
   }
   
   .p3 {
-    -moz-transform: rotateY(120deg) translateZ(20px);
-    transform: rotateY(120deg) translateZ(20px);
+    -moz-transform: rotateY(120deg) translateZ(173px);
+    transform: rotateY(120deg) translateZ(173px);
   }
   
   .p4 {
-    -moz-transform: rotateY(180deg) translateZ(20px);
-    transform: rotateY(180deg) translateZ(20px);
+    -moz-transform: rotateY(180deg) translateZ(173px);
+    transform: rotateY(180deg) translateZ(173px);
   }
   
   .p5 {
-    -moz-transform: rotateY(240deg) translateZ(20px);
-    transform: rotateY(240deg) translateZ(20px);
+    -moz-transform: rotateY(240deg) translateZ(173px);
+    transform: rotateY(240deg) translateZ(173px);
   }
   
   .p6 {
-    -moz-transform: rotateY(300deg) translateZ(20px);
-    transform: rotateY(300deg) translateZ(20px);
+    -moz-transform: rotateY(300deg) translateZ(173px);
+    transform: rotateY(300deg) translateZ(173px);
   }
   
-  .main {
-    display: 50;
-    flex-direction: column;
-    gap: 0.5em;
-  }
   
-  .up {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-  }
-  
-  .down {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-  }
-  
-  .card1 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 90px 5px 5px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .instagram {
-    margin-top: 1.5em;
-    margin-left: 1.2em;
-    fill: #cc39a4;
-  }
-  
-  .card2 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 90px 5px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .twitter {
-    margin-top: 1.5em;
-    margin-left: -.9em;
-    fill: #03A9F4;
-  }
-  
-  .card3 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 5px 5px 90px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .github {
-    margin-top: -.6em;
-    margin-left: 1.2em;
-  }
-  
-  .card4 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 5px 90px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .discord {
-    margin-top: -.9em;
-    margin-left: -1.2em;
-    fill: #8c9eff;
-  }
-  
-  .card1:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #cc39a4;
-  }
-  
-  .card1:hover .instagram {
-    fill: white;
-  }
-  
-  .card2:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #03A9F4;
-  }
-  
-  .card2:hover .twitter {
-    fill: white;
-  }
-  
-  .card3:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: black;
-  }
-  
-  .card3:hover .github {
-    fill: white;
-  }
-  
-  .card4:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #8c9eff;
-  }
-  
-  .card4:hover .discord {
-    fill: white;
-  }
-
 }
